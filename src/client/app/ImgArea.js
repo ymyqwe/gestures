@@ -96,17 +96,17 @@ export default class ImgArea extends Component {
             left: `${left}px`,
             top: `${top}px`
         }
-        let imgClasses = classNames('lena', 'flash', {animated:animating}, {scale:scale})
+        let imgClasses = classNames('mi', 'flash', {animated:animating}, {scale:scale})
         return (
             <div>
                 <Gestures onPinch={this.onPinch} onMove={this.onMove} onRotate={this.onRotate} onDoubleTap={this.onDoubleTap} onLongPress={this.onLongPress}>
                     <div className="wrapper">
-                        <img className={imgClasses} style={imgStyle} src="http://read.pudn.com/downloads94/sourcecode/graph/texture_mapping/374111/shuzituxiang/len_std.jpg" alt=""/>
+                        <img className={imgClasses} style={imgStyle} src="mi.jpg" alt=""/>
                     </div>
                 </Gestures>
                 <div>
-                    <label>Pinch</label> <span>{this.state.pinch}</span><br/>
-                    <label>Rotate</label> <span>{this.state.angle}</span>
+                    <label>放大</label> <span>{this.state.pinch}</span><br/>
+                    <label>旋转</label> <span>{this.state.angle}</span>
                 </div>
             </div>
             )

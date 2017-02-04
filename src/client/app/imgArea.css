@@ -47,10 +47,9 @@
   animation-fill-mode: both;
 }
 
-.lena {
+.mi {
     position: relative;
     width: 200px;
-    height: 200px;
 }
 
 .mask {

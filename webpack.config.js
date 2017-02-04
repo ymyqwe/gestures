@@ -8,7 +8,7 @@ var config = {
     entry: APP_DIR + '/index.js',
     output: {
         path: BUILD_DIR,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     },
     module: {
         loaders : [
@@ -20,7 +20,11 @@ var config = {
             {
                 test:/\.css$/,
                 loader:"css-loader"
-            }
+            },
+            { 
+                test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, 
+                loader: 'url-loader?limit=8192'
+            },
         ]
     }
 }
