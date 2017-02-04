@@ -6,11 +6,11 @@
 
 2.  Install dependencies
 
-    npm install
+        npm install
 
 3. Try out
 
-    npm start
+        npm start
 
 ## Preview
 
